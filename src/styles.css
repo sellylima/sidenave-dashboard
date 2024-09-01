@@ -10,3 +10,45 @@ body {
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
+
+.layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* .content {
+    flex: 1;
+    transition: margin-left .5s ease; 
+    padding: 1rem; 
+  } */
+
+  app-sidenav {
+    transition: width .5s ease;
+  }
+
+  app-body {
+    flex: 1;
+    transition: margin-left .5s ease;
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    margin: 1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem #e6edef; 
+
+    .card-head {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #edf1f7;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .card-body {
+        padding: 1rem 1.5rem;
+    }
+}
+

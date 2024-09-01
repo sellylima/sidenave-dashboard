@@ -6,18 +6,18 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  ngOnInit(): void {
-  }
   @Input() collapsed = false;
   @Input() screenWidth = 0;
+  
+  ngOnInit(): void {
+  }
 
   getBodyClass(): string {
-    let styleClass = '';
-    if(this.collapsed && this.screenWidth > 768) {
-      styleClass = 'body-trimmed';
-    } else if(this.collapsed && this.screenWidth <= 768 && this.screenWidth > 0) {
-      styleClass = 'body-md-screen'
+   if (this.collapsed && this.screenWidth > 768) {
+      return 'body-trimmed';
+    } else if (this.collapsed && this.screenWidth <= 768 && this.screenWidth > 0) {
+      return 'body-md-screen';
     }
-    return styleClass;
+    return 'body-content'; // Estado padrão
   }
 }
