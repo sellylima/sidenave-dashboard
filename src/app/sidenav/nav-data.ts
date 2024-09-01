@@ -5,5 +5,30 @@ export const navbarData = [
         RouterLink: 'dashboard',
         icon: 'fa fa-home', 
         label: 'Dashboard'
-    }
+    },
+    {
+        RouterLink: 'produtos',
+        icon: 'fa fa-box-open', 
+        label: 'Produtos'
+    },
+    {
+        RouterLink: 'cupons',
+        icon: 'fa fa-tags', 
+        label: 'Cupons'
+    },
+    {
+        RouterLink: 'file',
+        icon: 'fa fa-file', 
+        label: 'File'
+    },
+    {
+        RouterLink: 'midia',
+        icon: 'fa fa-camera', 
+        label: 'Mídia'
+    },
+    {
+        RouterLink: 'configuracao',
+        icon: 'fa fa-cog', 
+        label: 'Configuração'
+    },
 ];
