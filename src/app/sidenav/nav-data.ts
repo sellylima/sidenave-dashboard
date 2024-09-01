@@ -4,7 +4,7 @@ export const navbarData = [
     {
         RouterLink: 'dashboard',
         icon: 'fa fa-home', 
-        label: 'Dashboard'
+        label: 'Painel'
     },
     {
         RouterLink: 'produtos',
