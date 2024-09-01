@@ -12,6 +12,11 @@ export const navbarData = [
         label: 'Produtos'
     },
     {
+        RouterLink: 'estatistica',
+        icon: 'fa fa-chart-bar', 
+        label: 'Estatística'
+    },
+    {
         RouterLink: 'cupons',
         icon: 'fa fa-tags', 
         label: 'Cupons'
